@@ -6,6 +6,6 @@
         <description>Title, description, image tags for sharing to Facebook and Twitter.</description>
         <requires>
                 <type>elgg_release</type>
-                <version>2.0</version>
+                <version>3.0</version>
         </requires>
 </plugin_manifest>
