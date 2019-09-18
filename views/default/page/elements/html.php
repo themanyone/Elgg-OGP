@@ -27,7 +27,7 @@ $head_content = elgg_extract('head', $vars, '');
 $body_content = elgg_extract('body', $vars, '');
 
 //get page title, description
-if ($q = mb_ereg_replace("\s+", "-", trim($_GET['q']))){
+if ($q = mb_ereg_replace("\W+", "-", get_input("q"))){
 	$title = $q.".".$_SERVER["HTTP_HOST"];
 } else {
 	preg_match('#<title>(.*?)</title#', $head_content, $title);
